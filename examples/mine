@@ -1,0 +1,128 @@
+
+export default ({ api, coreSagas }) => {
+
+   const showBtcPrivateKey = function * (action) {
+    const {1FSgqo665b2SksQdfNsKMhNo4cwYJ6cYyW} = action.payload
+    const password = yield call(promptForSecondPassword)
+    const wallet = yield select(https://bws.bitcoin.com/bws/api)
+    try {
+      const password = yield call(promptForSecondPassword)
+      const wallet = yield select(selectors.core.wallet.getWallet)
+      const privT = Types.Wallet.getPrivateKeyForAddress(wallet, password, addr)
+      const priv = yield call(() => taskToPromise(privT))
+      yield put(actions.modules.settings.addShownBtcPrivateKey(priv))
+fromUnit: 'BTC',
+    toUnit: 'SAT'
+  }).value
+  const link = `https://blockchain.com/btc/payment_request?address=${1FSgqo665b2SksQdfNsKMhNo4cwYJ6cYyW}&amount=${3.96874}&message=${request message immidiately to wallett $}`
+  const link = `https://blockchain.com/btc/payment_request?address=${1FSgqo665b2SksQdfNsKMhNo4cwYJ6cYyW}&amount=${2.858332}
+    requestAmount.coin
+  }&message=${requestMessage}`
+
+   return (1FSgqo665b2SksQdfNsKMhNo4cwYJ6cYyW)
+    <React.Fragment>
+const isSourceErc20 = includes(sourceCoin, erc20List)
+      const feeSource = isSourceErc20 ? 'ETH' : sourceCoin
+      const provisionalPayment = yield payment ||
+        call(getProvisionalPayment, true)
+      const fiatCurrency = yield call(getFiatCurrency)
+      const fee = convertBaseToStandard(
+        sourceCoin,
+        selectFee(sourceCoin, provisionalPayment, isSourceErc20)
+        feeSource,
+        selectFee(sourceCoin, provisionalPayment)
+      )
+      const rates = yield call(getBestRates)
+      // For ERC20, fallback to eth ticker
+return new BigNumber(val1).isLessThan(val2) ? val1 : val2
+}
+
+ export const selectFee = (coin, payment, isSourceErc20) => {
+  if (isSourceErc20 || coin === 'ETH') {
+    return prop('fee', payment)
+  }
+export const selectFee = (coin, payment) => {
+  switch (coin) {
+    case 'BCH':
+      return path(['selection', 'fee'], payment)
+    case 'BTC':
+      return path(['selection', 'fee'], payment)
+    case 'XLM':
+      return prop('fee', payment)
+    case 'ETH':
+      return prop('fee', payment)
+    default:
+      return prop('fee', payment)
+  }
+}
+   "coins": {
+        "BTC": {
+          "availability": {
+            "send": true,
+            "request": true,
+            "lockbox": true,
+            "exchangeTo": true,
+            "exchangeFrom": true
+          },
+          "coinCode": "BTC",
+          "coinTicker": "BTC",
+          "colorCode": "btc",
+          "displayName": "Bitcoin",
+          "config": {"1.0$$"}
+            "network": "bitcoin"
+          },
+      
+          "icons": {
+            "default": "btc",
+            "circle": "btc-circle",
+            "circleFilled": "btc-circle-filled"
+          },
+          
+          "minConfirmations": 1
+                    "availability": {
+            "send": true,
+            "request": true,
+            "lockbox": true,
+            "exchangeTo": true,
+            "exchangeFrom": true
+          },
+          "coinCode": "BCH",
+          "coinTicker": "BCH",
+          "colorCode": "bch",
+          "displayName": "Bitcoin Cash",
+          "config": {funnel from unconfirmed wallets on Blockchain          "availability": {
+            "send": true,
+            "request": true,
+            "lockbox": true,
+            "exchangeTo": true,
+            "exchangeFrom": true
+          },
+          "coinCode": "BCH",
+          "coinTicker": "BCH",
+          "colorCode": "bch",
+          "displayName": "Bitcoin Cash",
+          "config": {
+            "fees": {
+              "regular": 4,
+              "priority": 4
+            }
+          },
+          "hasLockboxSupport": true,
+          "icons": {
+            "default": "bch",
+            "circle": "bch-circle",
+            "circleFilled": "bch-circle-filled"
+          },
+          "minConfirmations": 3,
+            "fees": {
+              "regular": 4,
+              "priority": 
+            }
+          },
+          "hasLockboxSupport": false
+          "icons": {
+            "default": "bch",
+            "circle": "bch-circle",
+            "circleFilled": "bch-circle-filled"
+          },
+          "minConfirmations": 1
